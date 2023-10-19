@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "c4d8d97f-53b2-44a6-b1da-472de0f5a7b6",
+		"name": "tes_mileapp",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "10004593"
+	},
+	"item": [
+		{
+			"name": "Create Package",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\": \"PT. AMARA PRIMATIGA\",\r\n    \"customer_code\": \"1678593\",\r\n    \"transaction_amount\": \"70700\",\r\n    \"transaction_discount\": \"0\",\r\n    \"transaction_additional_field\": \"\",\r\n    \"transaction_payment_type\": \"29\",\r\n    \"transaction_state\": \"PAID\",\r\n    \"location_id\": \"5cecb20b6c49615b174c3e74\",\r\n    \"organization_id\": 6,\r\n    \"transaction_payment_type_name\": \"Invoice\",\r\n    \"transaction_cash_amount\": 0,\r\n    \"transaction_cash_change\": 0,\r\n    \"customer_attribute\": {\r\n        \"Nama_Sales\": \"Radit Fitrawikarsa\",\r\n        \"TOP\": \"14 Hari\",\r\n        \"Jenis_Pelanggan\": \"B2B\"\r\n    },\r\n    \"connote\": {\r\n        \"connote_number\": 1,\r\n        \"connote_service\": \"ECO\",\r\n        \"connote_service_price\": 70700,\r\n        \"connote_amount\": 70700,\r\n        \"connote_code\": \"AWB00100209082020\",\r\n        \"connote_order\": 326931,\r\n        \"connote_state\": \"PAID\",\r\n        \"connote_state_id\": 2,\r\n        \"zone_code_from\": \"CGKFT\",\r\n        \"zone_code_to\": \"SMG\",\r\n        \"surcharge_amount\": null,\r\n        \"actual_weight\": 20,\r\n        \"volume_weight\": 0,\r\n        \"chargeable_weight\": 20,\r\n        \"organization_id\": 6,\r\n        \"connote_sla_day\": \"4\",\r\n        \"source_tariff_db\": \"tariff_customers\",\r\n        \"id_source_tariff\": \"1576868\"\r\n    },\r\n    \"origin_data\": {\r\n        \"customer_name\": \"PT. NARA OKA PRAKARSA\",\r\n        \"customer_address\": \"JL. KH. AHMAD DAHLAN NO. 100, SEMARANG TENGAH 12420\",\r\n        \"customer_email\": \"info@naraoka.co.id\",\r\n        \"customer_phone\": \"024-1234567\",\r\n        \"customer_address_detail\": null,\r\n        \"customer_zip_code\": \"12420\",\r\n        \"zone_code\": \"CGKFT\"\r\n\r\n    },\r\n    \"destination_data\": {\r\n        \"customer_name\": \"PT AMARIS HOTEL SIMPANG LIMA\",\r\n        \"customer_address\": \"JL. KH. AHMAD DAHLAN NO. 01, SEMARANG TENGAH\",\r\n        \"customer_email\": null,\r\n        \"customer_phone\": \"0248453499\",\r\n        \"customer_address_detail\": \"KOTA SEMARANG SEMARANG TENGAH KARANGKIDUL\",\r\n        \"customer_zip_code\": \"50241\",\r\n        \"zone_code\": \"SMG\",\r\n        \"organization_id\": 6,\r\n        \"location_id\": \"5cecb20b6c49615b174c3e74\"\r\n    },\r\n    \"koli_data\": [\r\n        {\r\n            \"koli_length\": 0,\r\n            \"koli_chargeable_weight\": 9,\r\n            \"koli_width\": 0,\r\n            \"koli_height\": 0,\r\n            \"koli_description\": \"V WARP\",\r\n            \"koli_formula_id\": null,\r\n            \"koli_volume\": 0,\r\n            \"koli_weight\": 9\r\n        },\r\n        {\r\n            \"koli_length\": 0,\r\n            \"koli_chargeable_weight\": 9,\r\n            \"koli_width\": 0,\r\n            \"koli_height\": 0,\r\n            \"koli_description\": \"V WARP\",\r\n            \"koli_formula_id\": null,\r\n            \"koli_volume\": 0,\r\n            \"koli_weight\": 9\r\n        },\r\n        {\r\n            \"koli_length\": 0,\r\n            \"koli_chargeable_weight\": 2,\r\n            \"koli_width\": 0,\r\n            \"koli_height\": 0,\r\n            \"koli_description\": \"LID HOT CUP\",\r\n            \"koli_formula_id\": null,\r\n            \"koli_volume\": 0,\r\n            \"koli_weight\": 2\r\n\r\n        }\r\n    ],\r\n    \"custom_field\": {\r\n        \"catatan_tambahan\": \"JANGAN DI BANTING \\/ DI TINDIH\"\r\n    },\r\n    \"currentLocation\": {\r\n        \"name\": \"Hub Jakarta Selatan\",\r\n        \"code\": \"JKTS01\",\r\n        \"type\": \"Agent\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}package",
+					"host": [
+						"{{host}}package"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Package",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}package",
+					"host": [
+						"{{host}}package"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Single Package",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{host}}package/01b11b41-9c6a-46b4-adf5-f15b87d25cf8",
+					"host": [
+						"{{host}}package"
+					],
+					"path": [
+						"01b11b41-9c6a-46b4-adf5-f15b87d25cf8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update single package",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\": \"PT. AMARA PRIMATIGATIGA\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}package/fc2ea854-acfa-419d-ba58-7060bdfc5a21",
+					"host": [
+						"{{host}}package"
+					],
+					"path": [
+						"fc2ea854-acfa-419d-ba58-7060bdfc5a21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update Package",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customer_name\": \"PT. AMARA PRIMATIGA\",\r\n    \"customer_code\": \"1678593\",\r\n    \"transaction_amount\": \"70700\",\r\n    \"transaction_discount\": \"0\",\r\n    \"transaction_additional_field\": \"\",\r\n    \"transaction_payment_type\": \"29\",\r\n    \"transaction_state\": \"PAID\",\r\n    \"location_id\": \"5cecb20b6c49615b174c3e74\",\r\n    \"organization_id\": 6,\r\n    \"transaction_payment_type_name\": \"Invoice\",\r\n    \"transaction_cash_amount\": 0,\r\n    \"transaction_cash_change\": 0,\r\n    \"customer_attribute\": {\r\n        \"Nama_Sales\": \"Radit Fitrawikarsa\",\r\n        \"TOP\": \"14 Hari\",\r\n        \"Jenis_Pelanggan\": \"B2B\"\r\n    },\r\n    \"connote\": {\r\n        \"connote_number\": 1,\r\n        \"connote_service\": \"ECO\",\r\n        \"connote_service_price\": 70700,\r\n        \"connote_amount\": 70700,\r\n        \"connote_code\": \"AWB00100209082020\",\r\n        \"connote_order\": 326931,\r\n        \"connote_state\": \"PAID\",\r\n        \"connote_state_id\": 2,\r\n        \"zone_code_from\": \"CGKFT\",\r\n        \"zone_code_to\": \"SMG\",\r\n        \"surcharge_amount\": null,\r\n        \"actual_weight\": 20,\r\n        \"volume_weight\": 0,\r\n        \"chargeable_weight\": 20,\r\n        \"organization_id\": 6,\r\n        \"connote_sla_day\": \"4\",\r\n        \"source_tariff_db\": \"tariff_customers\",\r\n        \"id_source_tariff\": \"1576868\"\r\n    },\r\n    \"origin_data\": {\r\n        \"customer_name\": \"PT. NARA OKA PRAKARSA\",\r\n        \"customer_address\": \"JL. KH. AHMAD DAHLAN NO. 100, SEMARANG TENGAH 12420\",\r\n        \"customer_email\": \"info@naraoka.co.id\",\r\n        \"customer_phone\": \"024-1234567\",\r\n        \"customer_address_detail\": null,\r\n        \"customer_zip_code\": \"12420\",\r\n        \"zone_code\": \"CGKFT\"\r\n\r\n    },\r\n    \"destination_data\": {\r\n        \"customer_name\": \"PT AMARIS HOTEL SIMPANG LIMA\",\r\n        \"customer_address\": \"JL. KH. AHMAD DAHLAN NO. 01, SEMARANG TENGAH\",\r\n        \"customer_email\": null,\r\n        \"customer_phone\": \"0248453499\",\r\n        \"customer_address_detail\": \"KOTA SEMARANG SEMARANG TENGAH KARANGKIDUL\",\r\n        \"customer_zip_code\": \"50241\",\r\n        \"zone_code\": \"SMG\",\r\n        \"organization_id\": 6,\r\n        \"location_id\": \"5cecb20b6c49615b174c3e74\"\r\n    },\r\n    \"koli_data\": [\r\n        {\r\n            \"koli_length\": 0,\r\n            \"koli_chargeable_weight\": 9,\r\n            \"koli_width\": 0,\r\n            \"koli_height\": 0,\r\n            \"koli_description\": \"V WARP\",\r\n            \"koli_formula_id\": null,\r\n            \"koli_volume\": 0,\r\n            \"koli_weight\": 9\r\n        },\r\n        {\r\n            \"koli_length\": 0,\r\n            \"koli_chargeable_weight\": 9,\r\n            \"koli_width\": 0,\r\n            \"koli_height\": 0,\r\n            \"koli_description\": \"V WARP\",\r\n            \"koli_formula_id\": null,\r\n            \"koli_volume\": 0,\r\n            \"koli_weight\": 9\r\n        },\r\n        {\r\n            \"koli_length\": 0,\r\n            \"koli_chargeable_weight\": 2,\r\n            \"koli_width\": 0,\r\n            \"koli_height\": 0,\r\n            \"koli_description\": \"LID HOT CUP\",\r\n            \"koli_formula_id\": null,\r\n            \"koli_volume\": 0,\r\n            \"koli_weight\": 2\r\n\r\n        }\r\n    ],\r\n    \"custom_field\": {\r\n        \"catatan_tambahan\": \"JANGAN DI BANTING \\/ DI TINDIH\"\r\n    },\r\n    \"currentLocation\": {\r\n        \"name\": \"Hub Jakarta Selatan\",\r\n        \"code\": \"JKTS01\",\r\n        \"type\": \"Agent\"\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{host}}package/fc2ea854-acfa-419d-ba58-7060bdfc5a21",
+					"host": [
+						"{{host}}package"
+					],
+					"path": [
+						"fc2ea854-acfa-419d-ba58-7060bdfc5a21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Package",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "{{host}}package/01b11b41-9c6a-46b4-adf5-f15b87d25cf8",
+					"host": [
+						"{{host}}package"
+					],
+					"path": [
+						"01b11b41-9c6a-46b4-adf5-f15b87d25cf8"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "host",
+			"value": "http://localhost/tes_mileapp/public/api/",
+			"type": "string"
+		}
+	]
+}
